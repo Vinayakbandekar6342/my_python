@@ -1,0 +1,4 @@
+Enter name of flower:rose
+Enter color of flower:red
+Enter season of flower:summer
+Thank you for the inputs!Rose is a flower. It has Red color. It blooms in Summer season.
