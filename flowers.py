@@ -1,3 +1,5 @@
+import pandas as pd
+import numpy as np
 a={'name' : ['lotus','sunflower'], 'colour':['pink','orange'] ,'season': ['All','summer']} #predefined dictionary
 
 for i in range (0,2):
@@ -33,9 +35,14 @@ def func(): #this function is for getting inputs and appending in list
              func()
          if n=='n':
              print('Thankyou for using the program, Bye!!')
+             return a
              exit()
              
          else:
              print('Please provide valid input')
              n=input('Do you want to add more flowers ?[y/n]\n')
+
+
 func()
+df=pd.DataFrame.from_dict(a)
+df.to_excel('flowers-df-created-new.xlsx')
